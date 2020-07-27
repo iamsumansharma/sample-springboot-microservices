@@ -1,2 +1,2 @@
 # sample-springboot-microservices
-Sample microservices to deploy on AWS 
+Sample microservices to automate deployment on Kubernetes using AWS Codebuild.

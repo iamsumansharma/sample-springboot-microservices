@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-consumer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-consumer
+  template:
+    metadata:
+      labels:
+        app: employee-consumer
+    spec:
+      containers:
+        - name: employee-consumer
+          image: CONTAINER_IMAGE
+          ports:
+          - containerPort: 3000
+          securityContext:
+            privileged: false
+            allowPrivilegeEscalation: false

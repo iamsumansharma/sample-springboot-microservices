@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: suman.sharma
+Build-Jdk: 13.0.2
+Implementation-Title: employee-producer
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.spring.mircoservices
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/sample-springb
+ oot-microservices/employee-producer/
+Created-By: Maven Integration for Eclipse
+

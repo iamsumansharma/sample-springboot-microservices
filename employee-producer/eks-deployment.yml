@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-producer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-producer
+  template:
+    metadata:
+      labels:
+        app: employee-producer
+    spec:
+      containers:
+        - name: employee-producer
+          image: CONTAINER_IMAGE
+          ports:
+          - containerPort: 2000
+          securityContext:
+            privileged: false
+            allowPrivilegeEscalation: false
